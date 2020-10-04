@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap');
+@font-face {
+	font-family: 'Conv_SitkaHeading-BoldItalic-04';
+	src: url('fonts/SitkaHeading-BoldItalic-04.eot');
+	src: local('☺'), url('fonts/SitkaHeading-BoldItalic-04.woff') format('woff'), url('fonts/SitkaHeading-BoldItalic-04.ttf') format('truetype'), url('fonts/SitkaHeading-BoldItalic-04.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('CenturyGothic-Italic.eot');
+	src: local('Century Gothic Italic'), local('CenturyGothic-Italic'),
+		url('CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+		url('CenturyGothic-Italic.woff') format('woff'),
+		url('CenturyGothic-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('CenturyGothic.eot');
+	src: local('Century Gothic'), local('CenturyGothic'),
+		url('CenturyGothic.eot?#iefix') format('embedded-opentype'),
+		url('CenturyGothic.woff') format('woff'),
+		url('CenturyGothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('CenturyGothic-Bold.eot');
+	src: local('Century Gothic Bold'), local('CenturyGothic-Bold'),
+		url('CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+		url('CenturyGothic-Bold.woff') format('woff'),
+		url('CenturyGothic-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('CenturyGothic-BoldItalic.eot');
+	src: local('Century Gothic Bold Italic'), local('CenturyGothic-BoldItalic'),
+		url('CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('CenturyGothic-BoldItalic.woff') format('woff'),
+		url('CenturyGothic-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* header */
+	.my_navbar {
+		background-color: #f5f2f8;
+		margin-bottom: 0;
+	}
+	.my_navbar span .icon {
+		display: inline-block;
+		width: 15px;
+		height: 17px;
+		background: url("../images/css_sprites.png");
+	}
+	.my_navbar a {
+		color: #5b5da8;
+		text-decoration: none;
+	}
+	.my_navbar span .entrance {
+		background-position: -317px -522px;
+	}
+	.my_navbar span .registration {
+		background-position: -352px -522px;
+	}
+	.navbar-brand span {
+		font: 400 12px/14px "Century Gothic";
+	}
+	.navbar-header {
+		float: right;
+	}
+	.my_brand_item1, .my_brand_item2 {
+		display: inline-block;
+	}
+	.my_brand_item2 {
+		padding-left: 40px;
+	}
+	@media (max-width: 992px) {
+	.navbar-toggle .icon-bar {
+		background-color: #888;
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+	}
+	}
+	.for_users {
+		padding-bottom: 5px;
+	}
+	.logo h1 {
+	color: #ff5fb6;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom:0;
+	font: 58px 'Philosopher', sans-serif;
+	}
+	.logo h2 {
+	color: rgba(91, 93, 168, 0.9);
+	font: 13px "Century Gothic";
+	margin: 0 0 24px;
+	}
+	.user_tools span .icon {
+		display: inline-block;
+		width: 37px;
+		height: 33px;
+		background: url("../images/css_sprites.png");
+	}
+	.user_tools span .marker {
+		background-position: -394px -461px;
+	}
+	.user_tools span .basket {
+		position: relative;
+		background-position: -162px -522px;
+	}
+	.user_tools span .basket::before {
+		position: absolute;
+		content: "";
+		width: 22px;
+		height: 22px;
+		bottom: -4px;
+		left: -4px;
+		border-radius: 50%;
+		background-color: #ff5fb6;
+	}
+	.user_tools span .basket::after {
+		position: absolute;
+		content: "";
+		width: 8px;
+		height: 10px;
+		bottom: 2px;
+		left: 3px;
+		background: url("../images/css_sprites.png") -440px -264px;
+	}
+	.user_tools a {
+		color: #5b5da8;
+		text-decoration: none;
+		font-weight: 400;
+		font: 12px "Century Gothic";
+	}
+	.user_tools {
+		padding-top: 32px;
+		text-align: right;
+	}
+	.phones a {
+		color: #ff5fb6;
+		font: 14px "Century Gothic";
+		font-weight: 700;
+		text-transform: uppercase;
+		display: block;
+		text-decoration: none;
+		text-align: right;
+		}
+	.search_input {
+		border-radius: 10px;
+		border: 1px solid #5b5da8;
+		height: 27px;
+	}
+	.my_input_button {
+		width: 40px;
+		height: 27px;
+		background-color: #ff5fb6;
+		border-radius: 10px;
+		border: 1px solid #ff5fb6;
+	}
+	.search_icon {
+		display: inline-block;
+		width: 14px;
+		height: 15px;
+		background: url("../images/css_sprites.png") -406px -264px;
+	}
+/* slider */
+	.slider {
+		position: relative;
+		background: url("../images/slider.png") no-repeat;
+		background-size: cover;
+		min-height: 529px;
+		padding-left: 0;
+		padding-right: 0;
+		}
+	.slider:after {
+		position: absolute;
+		top:0;
+		right:0;
+		height: 100%;
+		position: absolute;
+		background-color: rgba(185, 146, 216, 0.5);
+	}
+	@media screen and (min-width: 768px) {
+		.slider:after {
+		content: "";
+		width: calc((100vw - 765px)/2);
+		position: absolute;
+		top:0;
+		right: 0;
+		height: 100%;
+		background-color: rgba(185, 146, 216, 0.5)
+		}
+		}
+	@media screen and (min-width: 992px) {
+			.slider:after {
+				width: calc((100vw - 985px)/2);
+			}
+			}
+	@media screen and (min-width: 1200px) {
+			.slider:after {
+			width: calc((100vw - 1185px)/2);
+			}
+			}
+	.signature {
+		position: relative;
+			}
+	.signature:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		right: 0;
+		background-color: rgba(185, 146, 216, 0.5);
+		height: 529px;
+		width: 25%;
+		border-radius: 50% 0 0 50%/ 350px 0 0 350px;
+	}
+	.slider h2 {	
+		color: #fffeff;
+		font: 42px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: right;
+		margin: 0;
+		padding: 46px 15px;
+		border: 14px solid transparent;
+		border-image: linear-gradient(-221deg, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+		-moz-border-image: linear-gradient(-221deg, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+		-webkit-border-image: linear-gradient(-221deg, rgba(255, 195, 227, 0.4) 0%, rgba(248, 234, 225, 0.4) 50%, rgba(247, 247, 247, 0.4) 100%);
+		border-image-slice: 1;
+		margin-top: 144px;
+	}
+	.dropdown_wrapper {
+		position: relative;
+	}
+	@media screen and (min-width: 768px) {
+		.slider h2 {
+		font-size: 20px;
+		}
+		}
+	@media screen and (min-width: 992px) {
+		.slider h2 {
+		font-size: 25px;
+		}
+		}
+	@media screen and (min-width: 1000px) {
+		.slider h2 {
+		font-size: 30px;
+		}
+		}
+	@media screen and (min-width: 1200px) {
+		.slider h2 {
+		font-size: 42px;
+		}
+		}
+	.my_dropdown {
+		position: absolute;
+		bottom: 0;
+		top: -40px;
+		width: 100%;
+	}
+	.my_caret {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		margin-left: 5px;
+		margin-top: -10px;
+		vertical-align: middle;
+		width: 10px;
+		height: 10px;
+		border-bottom: 1px solid #5b5da8;
+		border-right: 1px solid #5b5da8;
+		transform: rotate(45deg);
+	}
+	.my_button {
+		color: #5b5da8;
+		font-weight: 700;
+		font: 18px "Century Gothic";
+		text-transform: uppercase;
+		background-color: transparent;
+	}
+	.drop_menu {
+		background-color: #ffffff;
+		opacity: 0.9;
+		width: 100%;
+		height: 529px;
+		margin: 0 0 0;
+	}
+	.drop_menu>li>a {
+		color: #5b5da8;
+		font: 16px "Century Gothic";
+		font-weight: 400;
+		line-height: 18px;
+		white-space: pre-line;
+		padding: 15px 15px 0;
+	}
+	@media screen and (max-width:768px) {
+		.my_button, .phones a {
+		padding-top: 5px;
+		font-size: 12px;
+		}
+		.my_caret {
+		margin-left: 0;
+		width: 7px;
+		height: 7px;
+		}
+	}
+/* main */
+	main h2 {
+		position: relative;
+		display: inline-block;
+		color: #5b5da8;
+		font: 24px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+		margin-top: 0;
+	}
+	.advantages {
+		padding-top: 92px;
+		padding-bottom: 80px;
+	}
+	.advantage_item_content {
+		font: 14px "Century Gothic";
+		font-weight: 400;
+		color: #868686;
+	}
+	.advantage_item_1 {
+		position: relative;
+		border: 14px solid rgba(218, 194, 176, 0.13);
+		padding: 40px 25px 53px 25px;
+	}
+	.advantage_item_2 {
+		position: relative;
+		border: 14px solid rgba(218, 193, 179, 0.13);
+		padding: 40px 25px 53px 25px;
+	}
+	.advantage_item_3 {
+		position: relative;
+		border: 14px solid rgba(91, 93, 168, 0.08);	
+		padding: 40px 25px 53px 25px;
+	}
+	.advantage_item_1:before {
+		content: "";
+		position: absolute;
+		left: 7px;
+		top: -28px;
+		width: 62px;
+		height: 62px;
+		background: url(../images/css_sprites.png) -162px -379px;
+	}
+	  .advantage_item_2:before {
+		content: "";
+		position: absolute;
+		left: 17px;
+		top: -25px;
+		width: 36px;
+		height: 56px;
+		background: url(../images/css_sprites.png) -326px -379px;
+	}
+	  .advantage_item_3:before {
+		content: "";
+		position: absolute;
+		left: 12px;
+		top: -29px;
+		width: 62px;
+		height: 60px;
+		background: url(../images/css_sprites.png) -248px -299px;
+	}
+	  .promotion_item_1, .promotion_item_2 {
+		position: relative;
+	}
+	  .promotional_offers_1 {
+		position: absolute;
+		width: 213px;
+		height: 115px;
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: #c5b3d8;
+		padding: 24px 17px;
+	}
+	  .promotional_offers_1 span {
+		color: #ffffff;
+		font: 24px/24px "Century Gothic";
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	  .promotional_offers_1 span + span {
+		font: 12px "Century Gothic";
+		font-weight: 400;
+		text-transform: none;
+	}
+	  a.promotional_offers_1, a.promotional_offers_2 {
+		  text-decoration: none;
+	}
+	  .promotional_offers_2 {
+		position: absolute;
+		width: 301px;
+		height: 144px;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: right;
+		padding: 16px;
+	}
+	  .promotional_offers_2 div {
+		background-color: rgba(255, 255, 255, 0.7);
+		display: inline-block;
+	}
+	  .promotional_offers_2 div:first-child span:first-child {
+		color: #707070;
+		font: 72px/72px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-right: 10px;
+	}
+	  .promotional_offers_2 div span {
+		color: #707070;
+		font: 24px/24px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	  .promotional_offers_2 div:last-child span:last-child {
+		color: #707070;
+		font: 24px/24px "Century Gothic";
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-left: 10px;
+	}
+	  @media screen and (max-width: 992px) {
+		.promotional_offers_2 {
+			left:0;
+		  }
+		  .promotion_item_1,.promotion_item_2 {
+			width: 100%;
+		}
+	}
+		@media screen and (max-width: 768px) {
+		.promotional_offers_1 span {
+			font-size: 16px;
+			line-height: 16px;
+			  }
+		.promotional_offers_1 {
+			width: 130px;
+			height: 70px;
+			padding: 10px;
+		}
+		.promotional_offers_2 {
+			width: 150px;
+			height: 100px;
+			padding: 10px;
+		}
+		.promotional_offers_2 div:first-child span:first-child {
+		font-size: 18px;
+		line-height: 18px;
+		}
+		.promotional_offers_2 div span {
+			font-size: 14px;
+			line-height: 14px;
+		  }
+		.promotional_offers_2 div:last-child span:last-child {
+			font-size: 18px;
+			line-height: 18px;
+		  }
+	}
+	  .heading-wpapper {
+		text-align: center;
+	}
+	 .bestsellers h2, .new_items h2, .about_company h2 {
+		position: relative;
+		display: inline-block;
+		color: #5b5da8;
+		font: 36px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 66px;
+	}
+	.bestsellers, .new_items {
+		padding-top: 110px;
+	}
+	.new_items {
+		padding-bottom: 80px;
+	}
+	.bestsellers h2:before {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-33px);
+		width: 66px;
+		height: 60px;
+		background: url(../images/css_sprites.png) -162px -299px;
+	}
+	.bestsellers h2:after, .new_items h2:after{
+		position: absolute;
+		content: "";
+		top: 110%;
+		left:0;
+		width: 100%;
+		height: 6px;
+		background-color: #f7f7f7;
+		background-image: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+	}
+	main .owl-carousel h3 {
+		color: #5b5da8;
+		font: 14px "Century Gothic";
+		font-weight: 700;
+	}
+	main .owl-carousel p {
+		text-align: center;
+	}
+	main .owl-carousel p span:first-child {
+		color: #ff5fb6;
+		font: 24px "Century Gothic";
+		font-weight: 400;	
+	}
+	main .owl-carousel p span + span {
+		color: #5b5da8;
+		font: 14px "Century Gothic";
+		font-weight: 400;
+		padding-left: 15px;
+	}
+	main .owl-carousel p {
+		position: relative;
+		padding-top: 60px;
+	}
+	main .owl-carousel p:before {
+		position: absolute;
+		content: "";
+		background: url(../images/css_sprites.png) -268px -264px;
+		width: 83px;
+		height: 15px;
+		top: 7px;
+		left: 50%;
+		transform: translate(-41px);
+	}
+	main input[type="number"] {
+		width: 31px;
+		height:31px;
+		border: 1px solid #5b5da8;
+		border-radius: 50%;
+		color: #5b5da8;
+		text-align: center;
+	}
+		input[type=number]::-webkit-inner-spin-button,
+		input[type=number]::-webkit-outer-spin-button {
+    	-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+		margin: 0;
+		}
+		
+		input[type=number]{
+  		-moz-appearance: textfield;
+	}
+	main label {
+		color: #5b5da8;
+		font: 14px "Century Gothic";
+		font-weight: 400;
+	}
+	main input[type="submit"] {
+		color: #fefefe;
+		font: 14px "Century Gothic";
+		font-weight: 700;
+		text-transform: uppercase;
+		border: 1px solid #ff5fb6;
+		background-color: #ff5fb6;
+		padding: 5px 10px;
+		border-radius: 10px;
+	}
+	main .owl-carousel .item {
+		border: 14px solid rgba(205, 205, 205, 0.1);
+		padding: 30px 20px;
+	}
+	main .owl-carousel .item img {
+		min-height: 200px;
+		object-fit: contain;
+	}
+	main .owl-carousel .forms {
+		display: flex;
+		justify-content: space-between;
+	}
+	main .owl-carousel .owl-dots {
+		text-align: center;
+	}
+	main .owl-carousel .owl-dot {
+		background: #5b5da8;
+		width: 20px;
+		height: 10px;
+	}
+	main .owl-carousel .owl-dot.active {
+		background: #ff5fb6;
+	}
+	.new_items h2:before {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-31px);
+		width: 62px;
+		height: 61px;
+		background: url(../images/css_sprites.png) -244px -379px;
+	}
+/*reviews*/
+	.reviews_wrapper {
+		background-color: #c5b3d8;
+	}
+	.reviews {
+		padding-top: 83px;
+		padding-bottom: 80px;
+	}
+	.review_item {
+		position: relative;
+	}
+	.review_item:after {
+		position: absolute;
+		content: "";
+		width: 165px;
+		height: 121px;
+		top: -18px;
+		right: 101px;
+		border: 14px solid #ffffff;
+		opacity: 0.13;
+	}
+	@media (max-width: 992px) {
+		.review_item:after {
+			display: none;
+		}
+	} 
+	.reviews h2 {
+		position: relative;
+		display: inline-block;
+		color: #ffffff;
+		font: 36px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 46px;
+	}
+	.reviews h2:after {
+		position: absolute;
+		content: "";
+		top: 110%;
+		left:0;
+		width: 100%;
+		height: 6px;
+		background-color: #f7f7f7;
+		background-image: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+	}
+	.owl-carousel .owl-stage-outer {
+		padding-top: 20px;
+	}
+	.review_item {
+		color: #ffffff;
+		font-weight: 400;
+		font: 14px "Century Gothic";
+	}
+	.review_item .italic {
+		font-style: italic;
+	}
+	.owl-nav {
+		text-align: center;
+		margin-top: 24px;
+	}
+	.owl-carousel .owl-nav button.owl-prev {
+		width: 35px;
+		height: 35px;
+		background: url(../images/css_sprites.png) -284px -461px;
+		margin-right: 15px;
+	}
+	.owl-carousel .owl-nav button.owl-next {
+		width: 35px;
+		height: 35px;
+		background: url(../images/css_sprites.png) -339px -461px;
+		margin-left: 15px;
+	}
+/*about_company*/
+	.about_company{
+		color: #707070;
+		font: 14px "Century Gothic";
+		font-weight: 400;
+		padding-top: 90px;
+		padding-bottom: 130px;
+	}
+	.about_company h2 {
+		position: relative;
+		display: inline-block;
+		color: #5b5da8;
+		font: 36px "Century Gothic";
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 66px;
+	}
+	.about_company h2:before {
+		position: absolute;
+		content: "";
+		bottom: 5px;
+		left: 50%;
+		transform: translate(-29px);
+		width: 58px;
+		height: 42px;
+		background: url(../images/css_sprites.png) -330px -299px;
+	}
+	.about_company h2:after{
+		position: absolute;
+		content: "";
+		top: 110%;
+		left:0;
+		width: 100%;
+		height: 6px;
+		background-color: #f7f7f7;
+		background-image: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+	}
+	.about_company_bg_img {
+		position: relative;
+	}
+	.about_company_bg_img:before {
+		position: absolute;
+		content: "";
+		top: 237px;
+		left: 0;
+		width: 238px;
+		height: 269px;
+		background: url(../images/css_sprites.png) -10px -10px;
+	}
+	.about_company_bg_img:after {
+		position: absolute;
+		content: "";
+		top: 60px;
+		right: 0;
+		width: 204px;
+		height: 234px;
+		background: url(../images/css_sprites.png) -268px -10px;
+	}
+	@media (max-width: 992px) {
+		.about_company_bg_img:before, .about_company_bg_img:after {
+			display: none;
+		}
+	}
+/*footer*/
+	footer {
+		overflow: hidden;
+	}
+	.general_information {
+		background-color: #765598;
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+	.general_information h3 {
+		position: relative;
+		display: inline-block;
+		color: #ffffff;
+		font: 18px "Century Gothic";
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.general_information h3::after {
+		position: absolute;
+		content: "";
+		top: 115%;
+		left:0;
+		width: 100%;
+		height: 6px;
+		background-color: #f7f7f7;
+		background-image: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+	}
+	.general_information ul > li > a {
+		color: #ffffff;
+		font: 14px "Century Gothic";
+		font-weight: 400;
+		text-decoration: none;
+	}
+	.list-unstyled li:first-child, .list-inline li:first-child {
+		padding-top: 35px;
+	}
+	.catalog li+li,.for_buyers li+li{
+		margin-top: 20px;
+	}
+	.contacts li+li {
+		margin-top: 23px;
+	}
+	.contacts li+li+li {
+		margin-top: 28px;
+	}
+	.contacts li {
+		padding-left: 40px;
+		position: relative;
+	}
+	.contacts li a p {
+		margin: 0;
+	}
+	.contacts li::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 21px;
+		height: 31px;
+		content: "";
+		background: url("../images/css_sprites.png");
+		background-position: -451px -461px;
+	}
+	.contacts li+ li::before {
+		width: 27px;
+		height: 25px;
+		background-position: -443px -379px;
+	}
+	.contacts li+ li+ li::before {
+		width: 30px;
+		height: 32px;
+		background-position: -217px -522px;
+	}
+	.contacts li+ li+ li +li::before {
+		width: 30px;
+		height: 30px;
+		background-position: -267px -522px;
+	}
+	.contacts_item3 a {
+		display: block;
+	}
+	.social_networks a {
+		display: block;
+		background-image: url("../images/css_sprites.png");
+		background-position: -382px -379px;
+		height: 41px;
+		width: 41px;
+		text-decoration: none;
+	}
+	.social_networks li + li a {
+		background-position: -162px -461px;
+	}
+	.social_networks li + li + li a {
+		background-position: -223px -461px;
+	}
+	.social_networks li + li + li + li a {
+		background-position: -408px -299px;
+	}
+	.about_creators {
+		color: #765598;
+		font: 14px "Century Gothic";
+		font-weight: 400;
+	}
+
+
+	
+
+
+	
+
+
